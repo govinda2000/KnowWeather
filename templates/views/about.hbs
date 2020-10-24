@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {{>header}}
+    <style>
+        .main_header_right img{
+            width:75%;
+            height: 80%; 
+        }
+        .main_header_right figure{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    {{>navbar}}
+
+    <!-- ____________main header________________ -->
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!-- ________________left side div____________ -->
+                    <div class="col-md-6 col-12 main_header_right">
+                        <figure>
+                            <img src="images/about.jpg" alt="govinda" class="img-fluid" title="Govinda">
+                        </figure>
+                    </div>
+                    <div class="col-md-6 col-12 main_header_left">
+                        <p>Welcome to weather app</p>
+                        <h1>I am a youtuber.My channel is <span class="text-clr">UnitedTutorial </span> Visit my channel</h1>
+                        <a href="https://www.youtube.com/channel/UCMsEJd7fuR4Z7h5GWPG4Tgg" target="_united"><button>Subscribe</button></a>
+
+                    </div>
+                    <!-- _________right side div_________ -->
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- ____________footer_____________ -->
+    {{>footer}}
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

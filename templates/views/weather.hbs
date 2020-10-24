@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {{>header}}
+</head>
+
+<body>
+    {{>navbar}}
+
+    <!-- ____________main header________________ -->
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="main_content">
+                    <form action="" class="temp_form">
+                        <input type="text" id="cityname" placeholder="Enter city name" autocomplete="off">
+                        <input type="submit" value="search" id="submitBtn">
+                    </form>
+                </div>
+
+                <div class="tempInfo">
+                    <div class="top_layer">
+                        <p id="day">Tuseday</p>
+                        <p id="today_date">21 oct</p>
+                    </div>
+                    <div class="main_layer">
+                        <p id="city_name">Get output here</p>
+                        <div class="middle_layer data_hide">
+                            <p id="temp"><span id="temp_degree">0</span> <sup>o</sup>C</p>
+                            <p id="temp_status"><i class="fa fa-cloud" ></i></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- ____________footer_____________ -->
+   {{>footer}}
+
+   <script src="js/main.js"></script>
+   <script>
+
+       
+       const getCurrentDay = ()=>{
+           let weekday = new Array(7);
+           weekday[0] = 'Sunday';
+           weekday[1] = 'Monday';
+           weekday[2] = 'Tuesday';
+           weekday[3] = 'Wednesday';
+           weekday[4] = 'Thursday';
+           weekday[5] = 'Friday';
+           weekday[6] = 'Saturday';
+
+           let currentTime = new Date();
+           let today = weekday[currentTime.getDay()];
+           const day = document.getElementById('day');
+           
+           day.innerText = today;
+       };
+       getCurrentDay();
+
+
+   </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
